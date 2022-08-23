@@ -41,6 +41,18 @@ docker-compose up -d
 
 ### 导入数据
 
-打开数据表后，在页面顶部Tab下方的工具栏中，点击More可以看到上传CSV的菜单，可以直接导入数据，注意CSV字段顺序必须与数据库内一致，空字段也要保留足够的逗号，一般可以Excel内编辑好后，导出为CSV。
+打开数据表后，在页面顶部Tab下方的工具栏中，点击More可以看到上传CSV的菜单，可以直接导入数据，注意CSV字段顺序最好与数据库内保持一致，空字段务必要保留足够的逗号，一般可以Excel内编辑好后，导出为CSV。
 
 ![import](./assets/import-csv.png)
+
+选择CSV文件后，将提示上传文件内字段与数据库字段对应关系，需要将各个字段对应一次，对应好后就可以导入了。
+
+![match-fields](./assets/match-fields.png)
+
+![imported](./assets/imported.png)
+
+#### 导入注意事项
+
+1. 在Excel输出的CSV文件中去掉表头
+2. Excel输出的CSV文件最后可能会有空行，需要删除
+
